@@ -1,0 +1,24 @@
+{
+  "name": "train-timer",
+  "version": "1.0.0",
+  "description": "Real time Marta train information.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raymeibaum/train-timer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raymeibaum/train-timer/issues"
+  },
+  "homepage": "https://github.com/raymeibaum/train-timer#readme",
+  "dependencies": {
+    "express": "^4.15.5",
+    "morgan": "^1.8.2"
+  }
+}
