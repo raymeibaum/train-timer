@@ -8,7 +8,7 @@ const stationsController = require('./controllers/api/stations')
 app.use(logger('dev'))
 app.use(express.static('public'))
 
-app.use('/stations', stationsController)
+app.use('/api/stations', stationsController)
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => { console.info(`Server listening on port: ${port}.`) })
