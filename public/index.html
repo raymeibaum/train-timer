@@ -12,17 +12,37 @@
   <div class="container">
     <form>
       <div class="form-group">
-        <label for="state-select">Select Station</label>
-        <select class="form-control" id="state-select" name="station">
-          <option value="Kensington">Kensington</option>
-          <option value="Five Points">Five Points</option>
+        <label for="station-select">Select Station</label>
+        <select class="form-control" id="station-select" name="station">
+          <option value="" disabled selected>Retrieving station list..</option>
         </select>
       </div>
       <button type="submit" class="btn btn-success">Submit</button>
     </form>
+    <div class="results-table">
+      <strong>Westbound</strong>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Line</th>
+            <th>Heading</th>
+            <th>ETA</th>
+            <th>Remaining</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="results">
+            <td style="color: blue;">⬤</td>
+            <td>Hamilton E Holmes</td>
+            <td>01:31:44 PM</td>
+            <td>9 Minutes</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
