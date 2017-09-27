@@ -1,6 +1,6 @@
 'use-strict'
 
-function handleResults(response) {
+function jsonCallback(response) {
   console.log("handle results called", response)
 }
 
@@ -11,9 +11,6 @@ function submitForm(event) {
   $.ajax({
     url: `http://developer.itsmarta.com/NextTrainService/RestServiceNextTrain.svc/GetNextTrain/${station}`,
     dataType: "jsonp",
-    jsonpCallback: "handleResults"
-  }).done(function(response) {
-    console.log(response)
   })
 }
 
