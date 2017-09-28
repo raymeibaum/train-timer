@@ -21,26 +21,75 @@
       <button class="btn btn-default" disabled>Add to Favorites</button>
     </form>
     <h1 id="station-title"></h1>
-    <div class="results-table">
-      <strong>Westbound</strong>
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Line</th>
-            <th>Heading</th>
-            <th>Remaining</th>
-            <th>ETA</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="results">
-            <td style="color: green;">⬤</td>
-            <td>Bankhead</td>
-            <td>9 Minutes</td>
-            <td>01:31:44 PM</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="results">
+
+      <div class="table-container">
+        <h3>Northbound</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Line</th>
+              <th>Heading</th>
+              <th>Remaining</th>
+              <th>ETA</th>
+            </tr>
+          </thead>
+          <tbody id="northbound">
+
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-container">
+        <h3>Eastbound</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Line</th>
+              <th>Heading</th>
+              <th>Remaining</th>
+              <th>ETA</th>
+            </tr>
+          </thead>
+          <tbody id="eastbound">
+
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-container">
+        <h3>Southbound</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Line</th>
+              <th>Heading</th>
+              <th>Remaining</th>
+              <th>ETA</th>
+            </tr>
+          </thead>
+          <tbody id="southbound">
+
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-container">
+        <h3>Westbound</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Line</th>
+              <th>Heading</th>
+              <th>Remaining</th>
+              <th>ETA</th>
+            </tr>
+          </thead>
+          <tbody id="westbound">
+
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
