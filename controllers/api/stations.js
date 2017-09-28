@@ -4,11 +4,12 @@ const request = require('request')
 
 const stations = require('../../data/stations')
 
-
+// STATIONS INDEX
 router.get('/', (req, res) => {
   res.json(stations)
 })
 
+// STATION SHOW ROUTE
 router.get('/:station', (req, res) => {
   const station = req.params.station
   request(`http://developer.itsmarta.com/NextTrainService/RestServiceNextTrain.svc/GetNextTrain/${station}`, (error, response, body) => {
