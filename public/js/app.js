@@ -17,6 +17,7 @@ function sortTrainsByDirection(trains) {
     southbound: [],
     westbound: [],
   }
+
   trains.forEach(train => {
     switch (train.DIRECTION) {
       case "N":
@@ -39,7 +40,6 @@ function sortTrainsByDirection(trains) {
 function displayResults(response) {
   const trains = sortTrainsByDirection(JSON.parse(response))
   console.log(trains)
-
 }
 
 function updateTitle(stationName) {
